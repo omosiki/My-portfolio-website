@@ -1,0 +1,46 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    font-size: 4rem;
+    color: rgb(130, 237, 237);
+}
+.desktopmeunListItem{
+    cursor: pointer;
+    margin: 1rem;
+}
+.desktopmeunListItem:hover{
+     color: rgb(130, 237, 237);; 
+    /* padding-bottom: 1rem; */
+    /* border-bottom: 8px solid rgb(240, 240, 14); */
+}
+.active{
+    color: rgb(130, 237, 237);;
+    /* padding-bottom: 0.5rem; */
+    /* border-bottom: 3px solid rgb(130, 237, 237); */
+}
+.desktoMeunBtn{
+    background: #fff;
+    color: #000;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+.desktopMeunImg{
+    color: rgb(95, 189, 221);
+    margin: 0.5rem;
+    font-size: 1.4rem;
+}
