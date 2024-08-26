@@ -7,10 +7,11 @@
     background: transparent;
     text-decoration: none;
     overflow: hidden;
+    font-family: "Mooli", sans-serif;
     /* overflow-y: scroll; */
 }
 body{
     background: rgb(30, 30, 30);
     color: white;
-    font-family: "Mooli", sans-serif;
+    
 }
