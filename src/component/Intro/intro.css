@@ -1,5 +1,5 @@
 #intro{
-    /* height: calc(100vh - 4rem); */
+    height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
@@ -11,9 +11,9 @@
     z-index: -1;
     top: -4rem;
     right: 0;
-    object-fit: contain;
+    object-fit: cover;
     width: 400px;
-    height: 100vh;
+    height: 80vh;
     border-radius: 50%;
 }
 .introContent{

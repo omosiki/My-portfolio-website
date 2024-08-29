@@ -8,11 +8,71 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    height: 100vh;
+    /* height: 100vh !important; */
     color: antiquewhite;
-    /* background: forestgreen; */
+    /* background: forestgreen !important; */
 }
-#skills h2{
+.skilltwo{
     font-size: 3rem;
     font-weight: 500;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.skillsDoc{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+.skillBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.skillbar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: #aaaa;
+}
+.icon{
+    width: 3rem;
+    object-fit: cover ;
+    color: rgb(80, 227, 235);
+    height: 3rem;
+    margin-right: 2rem;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.skillText> p{
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+.text{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Mooli", sans-serif;
+    color: rgb(80, 227, 235);;
+    padding-bottom: 0.5rem;
+}
+@media screen and (max-width:720px) {
+    .skillText> p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:480px) {
+    .skillText> p{
+        font-size: 3vw;
+    }
+    .icon{
+        height: 2rem;
+        width: 2rem;
+    }
+    .skillText>h2{
+        font-size: 5vw;
+    }
 }
