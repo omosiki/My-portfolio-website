@@ -10,45 +10,52 @@
     margin: 0 auto;
     /* height: 100vh !important; */
     color: antiquewhite;
-    /* background: forestgreen !important; */
+   
 }
-.skilltwo{
+.he{
     font-size: 3rem;
     font-weight: 500;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
+    color: #aaa;
+    
 }
-.skillsDoc{
-    font-weight: 300;
+.skills p{
     font-size: 1rem;
+    color: #fff;
+    padding: 0.3rem 0;
     max-width: 50rem;
-    padding: 0 2rem;
+    font-weight: 400;
 }
 .skillBars{
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    margin: 4rem 0;
+/* animation: ease-in-out; */
 }
 .skillbar{
-    display: flex;
+ /* display: flex; */
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    background: #aaaa;
-}
+    background: #625d5daa; 
+    box-shadow: 0 2px 8px 2px rgba(53, 209, 220, 0.9);
+    animation: 2s ease-in;
+    }
 .icon{
-    width: 3rem;
-    object-fit: cover ;
+     width: 4rem;
+ 
     color: rgb(80, 227, 235);
     height: 3rem;
-    margin-right: 2rem;
-    /* display: flex; */
-    justify-content: center;
-    /* align-items: center; */
+   
+  
+    
+    
 }
 
-.skillText> p{
+
+.skillText p{
     font-size: 0.7rem;
     font-weight: 200;
 }
@@ -59,9 +66,15 @@
     color: rgb(80, 227, 235);;
     padding-bottom: 0.5rem;
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
     .skillText> p{
         font-size: 2vw;
+    }
+    .skillBars{
+        display: flex;
+        flex-direction: column;
+        /* gap: 2rem; */
+        margin: 2rem 0;
     }
 }
 @media screen and (max-width:480px) {
@@ -69,8 +82,8 @@
         font-size: 3vw;
     }
     .icon{
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 4rem;
     }
     .skillText>h2{
         font-size: 5vw;

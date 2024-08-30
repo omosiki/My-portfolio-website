@@ -1,23 +1,47 @@
-import React from 'react'
-import "./navbar.css"
+import React, { useState } from 'react';
+import './navbar.css'; // Import the CSS file for styling
+import { SiBackblaze } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
-import { RxModulzLogo } from "react-icons/rx";
-import {Link} from "react-scroll"
 
-const Navbar = () => {
-  return (
-    <nav className='navbar'>
-      <RxModulzLogo className='logo' />
- 
-      <div className='desktopMeun'>
-        <Link className='desktopmeunListItem active' >Home</Link>
-        <Link className='desktopmeunListItem'>About</Link>
-        <Link className='desktopmeunListItem'>Portfolio</Link>
-        <Link className='desktopmeunListItem'>Clients</Link>
-      </div>
-      <button className='desktoMeunBtn'> <IoIosContact className='desktopMeunImg' /> Contact me </button>
-    </nav>
-  )
-}
+const Navbar = ({ onContactClick }) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    
+      return (
+        <>
+            <nav className="navbar">
+            <SiBackblaze  className="logo"/>
+                {/* <div className="logo">MyWebsite</div> */}
+                <div className={`menu ${isOpen ? 'active' : ''}`}>
+                    <a href="intro" id='active'>Home</a>
+                    <a href="about">About</a>
+                    <a href="mywork">Mywork</a>
+                    <a href="contact">Contact</a>
+                </div>
+                
+                <button className="contact-button" onClick={onContactClick}>
+                <IoIosContact className='desktopMeunImg' /> Contacts
+                    </button>
+                
+                <div className="hamburger" onClick={toggleMenu}>
+                    &#9776; {/* Hamburger icon */}
+                </div>
+            </nav>
+        </>
+    );
+};
+
+export default Navbar;
+
+
+
+
+
+
+
+
+

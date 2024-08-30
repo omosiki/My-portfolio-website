@@ -1,4 +1,8 @@
-.navbar{
+/* Navbar.css */
+
+.navbar {
+  
+
     background: rgb(30, 30, 30);
     height: 5rem;
     width: 100vw;
@@ -12,36 +16,83 @@
     top: 0;
     z-index: 3;
 }
-.logo{
+
+.logo {
+    font-size: 1.5rem;
     font-size: 4rem;
     color: rgb(130, 237, 237);
 }
-.desktopmeunListItem{
+
+
+.menu {
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
     cursor: pointer;
     margin: 1rem;
 }
-.desktopmeunListItem:hover{
-     color: rgb(130, 237, 237);; 
-    /* padding-bottom: 1rem; */
-    /* border-bottom: 8px solid rgb(240, 240, 14); */
-}
-.active{
-    color: rgb(130, 237, 237);;
-    /* padding-bottom: 0.5rem; */
-    /* border-bottom: 3px solid rgb(130, 237, 237); */
-}
-.desktoMeunBtn{
+
+.contact-button {
+    cursor: pointer;
     background: #fff;
     color: #000;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1rem; 
     border-radius: 2rem;
+    
+}
+
+.contact-button:hover {
+    background-color: #a5c1e0; 
 }
 .desktopMeunImg{
     color: rgb(95, 189, 221);
     margin: 0.5rem;
     font-size: 1.4rem;
+} 
+#active{ 
+    color: rgb(130, 237, 237);
+    padding-bottom: 0.5rem; 
+    border-bottom: 3px solid rgb(130, 237, 237); 
+
+}
+
+ 
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
 }

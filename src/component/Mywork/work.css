@@ -14,18 +14,21 @@
 .workTitle h1{
     text-align: center;
     font-size: 40px;
-    color: aquamarine;
-    margin: 3.5rem 0;
+    color: white;
+    padding-bottom: 2rem;
+    
 }
 
 .work-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 4rem;
 }
 .myContainer{
  
     position: relative;
+    box-shadow: 0 2px 8px 2px rgba(53, 209, 220, 0.9);
+    border-radius: 1rem;
 }
 .myContainer h2{
     padding-bottom: 1rem;
@@ -43,4 +46,14 @@ img{
     right:  9rem ;
     bottom: 5rem;
     color: beige;
+}
+@media screen and (max-width:768px) {
+    .work-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .myContainer{
+        padding: 0 2rem;
+    }
 }

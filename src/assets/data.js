@@ -5,21 +5,21 @@ import store from "../assets/book-store.png";
 const Myworks = [
     {
         id: 1,
-        imgSrc: expense, // Use the imported variable
+        imgSrc: expense,
         name: "Expense Tracker",
         link: "https://omosiki.github.io/Budget-tracker-Internship/"
     },
     {
         id: 2,
-        imgSrc: travel, // Use the imported variable
+        imgSrc: travel, 
         name: "Travel Tour",
-        link:  "https://omosiki.github.io/Budget-tracker-Internship/" 
+        link:  "https://github.com/omosiki/Travel-tour-website.git" 
     },
     {
         id: 3,
-        imgSrc: store, // Use the imported variabl
+        imgSrc: store, 
         name: "Book Store",
-        link:  "https://omosiki.github.io/Budget-tracker-Internship/"
+        link:  "https://github.com/omosiki/Book-store.git"
     },
     {
         id: 4,

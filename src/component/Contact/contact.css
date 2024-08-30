@@ -1,0 +1,126 @@
+.contact{
+    width: 100vw;
+    overflow: hidden;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin: 3rem auto;
+}
+.contact-section{
+    display: flex;
+
+}
+  .contact-title h1{ 
+   text-align: center;
+     font-size: 40px;
+    font-weight: 500;
+} 
+.left{
+    flex: 1;
+     display: flex;
+    flex-direction: column;
+    gap: 30px; 
+} .left h1{
+  
+     background: linear-gradient(260deg, #4ccfc4 80%, #B415FF 100%); 
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+ .left p{
+  
+    color:  #D8D8D8;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+} 
+.contact-right{
+    flex: 1;
+}
+.contact-details{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     color: #D8D8D8;
+     font-size: 22px;
+}  
+ .contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-logo{
+    width:  2rem;
+    color: rgb(130, 237, 237);
+} 
+ .contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+.contact-right label{
+    color: #D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+} 
+ .contact-right input{
+   width: 500px;
+    height: 58px;
+    border: none;
+    padding-left: 20px;
+    background: #32323c;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #A0A0A0;
+} 
+ textarea{
+    background: #32323c;
+    border-radius: 4px;
+   padding: 25px;
+   border: none;
+   color: #A0A0A0;
+   width: 500px;
+   font-size: 20px;
+   width: 500px;
+} 
+.contact-submit{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(260deg, #353333 -5.09%, #27c4df 106.28%);
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+} 
+.contact-submit:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media screen and ( max-width:768px) {
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contact-right{
+        align-items: center;
+    }
+    .left{
+        justify-items: center;
+    }
+}
+
+
+
+
+
+
+
+ 

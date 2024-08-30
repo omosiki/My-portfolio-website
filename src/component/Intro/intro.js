@@ -1,6 +1,6 @@
 import React from 'react'
 import "./intro.css"
-import siki from "../../assets/siki.jpg"
+import siki from "../../assets/logo-Xx.jpg"
 
 import {Link} from "react-scroll"
 

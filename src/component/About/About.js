@@ -10,42 +10,23 @@ const About = () => {
   return (
     
     <section id='skills'>
-    <h2 className='skilltwo'>What i do</h2>
-    <span className='skillsDoc'>
-    I'm a skilled passionate FrontEnd Developer with experience in  creating  visually appealing and  interactive user-friendly website. 
-    </span >
+    <h2 className='he'>My skills</h2>
+    <p>
+          I'm a skilled passionate FrontEnd Developer with experience in  creating  visually appealing  <br/>and  interactive user-friendly website. 
+    </p >
     <div className='skillBars'>
         <div className='skillbar'>
-                <FaReact className='icon' />
-            <div className='skillText'>
-             <h2 className='text'>React</h2>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eum!</p>
-            </div>
+                <FaReact className='icon' />    
         </div>
         <div className='skillbar'>
              <TbBrandJavascript className='icon' />
-            <div className='skillText'>
-                 <h2 className='text'>JavaScript</h2>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eum!</p>
-             </div>
         </div>
         <div className='skillbar'>
               <MdCss className='icon' />
-            <div className='skillText'>
-             <h2 className='text'>CSS</h2>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eum!</p>
-            </div>
         </div>
         <div className='skillbar'>
              <TbHtml className='icon' />
-            <div className='skillText'>
-                 <h2 className='text'>Html</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eum!</p>
-            </div>
         </div>
-      
-        
-        
     </div>
   </section>
   )
